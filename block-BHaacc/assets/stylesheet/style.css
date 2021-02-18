@@ -1,0 +1,369 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom CSS */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img-100 {
+  width: 100%;
+  display: block;
+}
+button {
+  box-shadow: none;
+  border: 0;
+  outline: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  /* text-transform: uppercase; */
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  border-radius: 20px;
+  border: 1.5px solid black;
+  color: white;
+}
+
+.btn-red {
+  background-color: #CF3732;
+  border-color: #CF3732;
+}
+.btn-white {
+  background: transparent;
+  border-color: white;
+  font-weight: 700;
+}
+
+.btn-grey {
+  border-color: #EFEFEF;
+  color: #868686;
+  font-weight: 700;
+}
+.padding {
+  padding: 80px 0;
+}
+
+.heading {
+  font-size: 28px;
+}
+/* Header */
+.header {
+  padding: 32px 0;
+  position: absolute;
+  color: white;
+  width: 100%;
+}
+
+.brand {
+  width: 120px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.nav li {
+  margin-right: 20px;
+  font-size: 20px;
+  
+}
+
+.nav li a {
+  color: white;
+}
+
+.socials a {
+  margin-left: 15px;
+}
+
+.socials .btn {
+  margin-left: 25px;
+}
+.socials i {
+  color: white;
+}
+.hero {
+  min-height: 100vh;
+  background: linear-gradient( to right, rgba(58,122,202, .80), rgba(139,242,147, .75)), url("../media/images/home-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hero-wrapper {
+  padding-top: 160px;
+  padding-bottom: 90px;
+  color: white;
+}
+
+.hero-heading {
+  font-size: 44px;
+}
+.hero-subtext-wrapper {
+  margin-top: 30px;
+}
+
+.hero-subtext {
+  margin-left: 25px;
+}
+
+.hero-subtext h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.box-wrapper {
+  margin-bottom: 40px;
+}
+
+.intro-content .box-wrapper {
+  margin-bottom: 20px;
+}
+.box {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #D8D8D8;
+}
+
+.intro-content {
+  flex: 0 1 35%;
+}
+
+.services {
+  flex: 0 1 22%;
+  align-items: flex-start;
+}
+
+.service {
+  padding: 10px 0;
+}
+
+.service-title {
+  font-weight: 700;
+}
+.intro-img-container {
+  flex: 0 1 32%;
+}
+
+.line {
+  width: 80%;
+  height: 2px;
+  background-color: black;
+  margin: 8px 0;
+}
+
+.blog {
+  text-align: center;
+  background-color: #EFEFEF;
+}
+.blog-header {
+  display: inline-block;
+}
+
+/* Blog */
+.col-1-2 {
+  flex: 0 1 48%;
+  margin-bottom: 20px;
+}
+
+.blog-img-container {
+  width: 40%;
+}
+
+.blog-content {
+  width: 60%;
+  background: white;
+  align-self: stretch;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.time {
+  color: #CF3732;
+}
+
+.blog-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.blog-text {
+  margin: 10px 0 25px 0;
+}
+
+.work {
+  text-align: center;
+}
+
+.gallery-img-1-4 {
+  flex: 0 1 22%;
+}
+
+/* Contact  */
+
+.contact {
+  background:  linear-gradient( to right, rgba(58,122,202, .80), rgba(139,242,147, .75));
+  text-align: center;
+  color: white;
+}
+
+.contact-form {
+  flex: 0 1 62%;
+}
+
+.map {
+  flex: 0 1 32%;
+  text-align: left;
+}
+
+.map iframe {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.form-control,
+.form-control:active,
+.form-control:focus {
+  width: 48%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+textarea.form-control {
+  width: 100%;
+}
+/* .form-container.flex {
+  justify-content: flex-start;
+} */
+
+.form-control-btn {
+  text-align: left;
+}
+
+.footer {
+  background: linear-gradient(to right, rgba(65,65,65, 1), rgba(10,10,10, 1));
+  color:#C6C6C6;
+}
+
+.hydra-company {
+  flex: 0 1 37%;
+}
+
+.company-details {
+  flex: 0 1 60%;
+}
+
+.footer h2 {
+  margin-bottom: 15px;
+}
+.footer p, 
+.footer a {
+  color: #C6C6C6;
+}
+
+.contacts {
+  padding-top: 20px;
+  margin-top: 25px;
+  border-top: .5px solid #868686;
+}
+.footer .copyright {
+  flex: 0 1 50%;
+}
+
+.footer .contact-info {
+  width: 30%;
+}
+
+.contact-info li {
+  margin-right: 25px;
+}
